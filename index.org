@@ -1,0 +1,1046 @@
+#+title: Bucket (pail on snoonet) documentation
+#+author: XKCD Bucket Wiki 
+#+OPTIONS:   H:4 num:nil toc:2
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>
+
+#+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
+
+
+*(Rescued from [[https://web.archive.org/web/20170228183648/http://wiki.xkcd.com/wirc/index.php?title=Bucket&action=edit][archive.org]] and converted to [[file:bucket.org][Emacs org mode]] and then to HTML)*
+
+Bucket has an outer shell of metal; within the metal is a protective
+layer of high density plastic, in which may or may not reside pure HOH.
+There can only be speculation about what else the Bucket contains.
+
+* Using the #XKCD Bucket
+  :PROPERTIES:
+  :CUSTOM_ID: using-the-xkcd-bucket
+  :END:
+
+1. Do not make our Bucket stupid or mean. Any stupiding of the Bucket
+   may cause an op to tell Bucket to ignore you.
+2. Bucket's replies should generally not be meaner or more asshole-y
+   than the lines that trigger them.
+3. +Do not alter factoids that are not your own.+ Nobody owns any
+   factoids.
+4. Only the ops are allowed to cull stupid or useless factoids. And they
+   will, boy howdy they will. The only exception to this rule is if the
+   factoid is about you -- if someone writes an abusive factoid about
+   you and the ops have not corrected it, please feel free to edit it
+   yourself.
+5. Using Bucket as a surrogate asshole will result in either a
+   revocation of your Bucket privileges or having your ass kicked from
+   here to Pakistan (unless you live in Pakistan, in which case you will
+   be booted to occupied North Texas). *Making abusive, mean factoids
+   about anyone else is strictly outlawed* and if you are caught doing
+   it, you will be harshly dealt with. Please tattle on anyone you see
+   adding abusive factoids, whether in #xkcd or #bucket.
+6. Do not attempt to have Bucket trigger another #xkcd bot. It won't
+   work, don't try, you'll just really annoy those who have to clean up
+   your mess. Do it enough and actions will be taken to correct the
+   situation.
+7. Do not try to put a variable in a factoid trigger. It does not work
+   that way.
+
+** Addressing
+   :PROPERTIES:
+   :CUSTOM_ID: addressing
+   :END:
+
+You need to address Bucket directly to teach him factoids; you can do so
+by prefixing your message =Bucket,= or =Bucket:= (Your IRC client may
+automatically do this).
+
+*** If Bucket doesn't reply
+    :PROPERTIES:
+    :CUSTOM_ID: if-bucket-doesnt-reply
+    :END:
+
+- Make sure you're prefixing messages properly. =Bucket~ [command]= and
+  =Bucket [command]= will not trigger him.
+- Bucket will not trigger non-addressed factoids which are shorter than
+  6 letters long. =Bucket, dogs= will trigger bucket. =Dogs= on its own
+  line will not. =Bucket, how2love= and =how2love= will trigger the same
+  factoid.
+- In PM, do not preface your commands with =Bucket, =, just use the
+  =[command]= directly. You can only query, you cannot teach factoids in
+  PM.
+- Bucket might be shut up at the time. Use #bucket (or configured control channel) or PM to check.
+- Bucket might be ignoring you -- and only you -- because an op has told
+  it to. Probably because you put in some bad factoids.
+
+** Teaching factoids to Bucket
+   :PROPERTIES:
+   :CUSTOM_ID: teaching-factoids-to-bucket
+   :END:
+
+**** X is Y
+     :PROPERTIES:
+     :CUSTOM_ID: x-is-y
+     :END:
+
+The most common type of factoid you can teach to Bucket is by simply
+saying =X is Y=. If someone says "X" later on, Bucket will reply =X is Y=
+
+- Be careful about accidentally creating a new factoid while talking
+  to Bucket.  
+- You can also say =X is also Y=, this was formerly required to attach
+  multiple factoids to one trigger so you may see older users use
+  this.
+- If you type =X is Y is Z=, Bucket will split it on the first =is=,
+  making the trigger =X= and the factoid =Y is Z= and Bucket will
+  respond =X is Y is Z=.
+- If you wanted =X is Y= to trigger =Z=, teach Bucket =X is Y <is> Z=.
+  See more ways to verb.
+
+**** X are Y
+     :PROPERTIES:
+     :CUSTOM_ID: x-are-y
+     :END:
+
+Similar to =X is Y=, you can teach this kind of factoid by simply saying
+=X are Y= and if someone says =X= later on, Bucket will reply =X are Y=
+
+**** X <verb> Y
+     :PROPERTIES:
+     :CUSTOM_ID: x-y
+     :END:
+
+You can use other things instead of =is= or =are= by putting them inside
+greater and lesser-than signs, such as =X <loves> Y= or =X <compliments> Y=
+
+
+**** X <reply> Y
+     :PROPERTIES:
+     :CUSTOM_ID: x-y-1
+     :END:
+
+You can say =X <reply> Y=, when someone says =X=, Bucket will respond =Y=.
+
+- You might see some people using =X is <reply> Y=, this was formerly
+  required so you may see older users use it.
+
+**** X <action> Y
+     :PROPERTIES:
+     :CUSTOM_ID: x-y-2
+     :END:
+
+If you use =X <action> Y=, when someone says =X=, Bucket will use =/me Y=.
+
+- Like the above two types, retain the greater-than and lesser-than signs.
+
+**** Slash commands
+     :PROPERTIES:
+     :CUSTOM_ID: slash-commands
+     :END:
+
+Bucket is not run on a client; she is her own entity. This means that
+slash commands (things like =/me=, =/msg=, =/quit=, etc) *do not work*. *Do
+not put them in*, you'll only anger those who have to clean up your
+mess.
+
+- Also, escaping (using the =\= to get things like question marks to
+  go in on a factoid) is no longer needed.
+
+**** Remember quote
+     :PROPERTIES:
+     :CUSTOM_ID: remember-quote
+     :END:
+
+If you type =remember {nick} {snippet}= where ={snippet}= is a snippet
+from a line that has been said by the person in ={nick}=, Bucket will
+remember that factoid under the trigger ={nick} quotes=. When that quote
+factoid is triggered, Bucket will respond =<Example> Lorem Ipsum=
+
+- When Bucket is remembering a =/me= action, instead of the regular
+  =<Example> Lorem Ipsum= he'll make an action =* Example lorem ipsumed=.
+
+** Searching for factoids
+   :PROPERTIES:
+   :CUSTOM_ID: searching-for-factoids
+   :END:
+
+**** Listing factoids
+     :PROPERTIES:
+     :CUSTOM_ID: listing-factoids
+     :END:
+
+Teh =literal X= command will give you a list of factoids associated with that
+trigger separated with =|=. If the list of factoids is too large, Bucket
+will put them them on another "page" and indicate how many factoids are
+on the subsequent pages by appending something like =72 more= on the
+list of factoids. You can browse the next pages by using =literal[2] X=,
+replacing =2= with the number of the page you wish to check.
+
+**** List factoids in a text file
+     :PROPERTIES:
+     :CUSTOM_ID: list-factoids-in-a-text-file
+     :END:
+
+Typing =literal[*] X= will make Bucket produce a url linking to a text
+file of all the factoids associated with that trigger.
+
+**** Triggering a specific factoid
+     :PROPERTIES:
+     :CUSTOM_ID: triggering-a-specific-factoid
+     :END:
+
+=X =~ /m/= will make Bucket reply with the first factoid in that trigger
+which contains =m=.
+
+**** Listing the details of a factoid
+     :PROPERTIES:
+     :CUSTOM_ID: listing-the-details-of-a-factoid
+     :END:
+
+=what was that?= will make Bucket list the factoid's details thusly:
+=That was X(#77777): <reply> Y=, the number being the factoid's ID.
+
+** Editing factoids
+   :PROPERTIES:
+   :CUSTOM_ID: editing-factoids
+   :END:
+
+**** Substitution editing
+     :PROPERTIES:
+     :CUSTOM_ID: substitution-editing
+     :END:
+
+Telling Bucket =X =~ s/m/n/= will replace =m= with =n= in the factoids
+for the trigger =X=. Adding an =i= flag as in =X =~ s/m/n/i= replaces
+case-insensitively. If there are multiple occurrences of =m=, Bucket
+will edit the first instance in the trigger's first matching factoid.
+Ops can add a =g= flag to replace all occurrences.
+
+Slashes should not be backslash-escaped in the string--use any other
+delimiter, such as a comma, as a replacement for slashes. Example: to
+change =The best site <is> http://google.com/search= to =The best site <is> http://xkcd.com=, 
+you could type: =Bucket: The best site =~ s,http://google.com/search,http://xkcd.com=
+
+**** Undo
+     :PROPERTIES:
+     :CUSTOM_ID: undo
+     :END:
+
+=undo last= undoes the last change made to a factoid (editing one,
+adding one, deleting one.) Non-ops can undo last only if they made the
+last change.
+
+** Word class variable
+   :PROPERTIES:
+   :CUSTOM_ID: word-class-variable
+   :END:
+
+Putting a word class variable in a factoid will replace the variable
+with a word from the appropriate word class. Variables apply only to
+Bucket's responses. For example, telling bucket =play with $who <reply> what would you like me to play with $who?= will not work.
+
+**** $noun
+     :PROPERTIES:
+     :CUSTOM_ID: noun
+     :END:
+
+Use =$noun= to place a noun variable which will become a noun when the
+factoid is triggered.  Bucket knows plurals and will properly work
+if you use =a $noun= or =some $nouns=.
+
+**** $verb
+     :PROPERTIES:
+     :CUSTOM_ID: verb
+     :END:
+
+Use =$verb= to place a verb variable which will become a verb when the
+factoid is triggered.  Bucket knows plurals and tenses so =$verbs=,
+=$verbed= and =$verbing= may be used.
+
+**** $adjective
+     :PROPERTIES:
+     :CUSTOM_ID: adjective
+     :END:
+
+Use =$adjective= to place an adjective variable which will become an
+adjective when the factoid is triggered.
+
+**** $preposition
+     :PROPERTIES:
+     :CUSTOM_ID: preposition
+     :END:
+
+Use =$preposition= to place a proposition variable which will become a
+preposition when the factoid is triggered.
+
+** Username variables
+   :PROPERTIES:
+   :CUSTOM_ID: username-variables
+   :END:
+
+Putting a username variable in a factoid will replace the variable with
+a username when triggered.
+
+**** $who
+     :PROPERTIES:
+     :CUSTOM_ID: who
+     :END:
+
+=$who= will be replaced by the name of the person who triggered the
+factoid.
+
+**** $someone
+     :PROPERTIES:
+     :CUSTOM_ID: someone
+     :END:
+
+=$someone= will be replaced by a username chosen from recent posters.
+Note, =$someone= used to be completely random, but was changed so that
+Bucket doesn't bother idle users as much.
+
+**** $to
+     :PROPERTIES:
+     :CUSTOM_ID: to
+     :END:
+
+=$to= will be replaced by the intended recipient, e.g. =<Someone>
+Bucket: yada yada= will replace =$to= with =Bucket=.  If there is no
+intended recipient, it will fall back on =$someone=.
+
+**** $op
+     :PROPERTIES:
+     :CUSTOM_ID: op
+     :END:
+
+=$op= will be replaced by the name of one of the Ops.  Pro tip: annoy
+ops at your own risk.
+
+** Object variables
+   :PROPERTIES:
+   :CUSTOM_ID: object-variables
+   :END:
+
+**** $vehicle
+     :PROPERTIES:
+     :CUSTOM_ID: vehicle
+     :END:
+
+=$vehicle= will be replaced with a vehicle.
+
+**** $room
+     :PROPERTIES:
+     :CUSTOM_ID: room
+     :END:
+
+=$room= will be replaced with a room.
+
+**** $ejaculation
+     :PROPERTIES:
+     :CUSTOM_ID: ejaculation
+     :END:
+
+=$ejaculation= will be replaced with a exclamation. /Support for this
+feature is deprecated/
+
+**** $celebrity
+     :PROPERTIES:
+     :CUSTOM_ID: celebrity
+     :END:
+
+=$celebrity= will be replaced with a name of a celebrity.
+
+**** $mood
+     :PROPERTIES:
+     :CUSTOM_ID: mood
+     :END:
+
+=$mood= will be replaced with a name of a mood.
+
+**** $color
+     :PROPERTIES:
+     :CUSTOM_ID: color
+     :END:
+
+=$color= will be replaced with the name of a color.
+
+**** $bodypart
+     :PROPERTIES:
+     :CUSTOM_ID: bodypart
+     :END:
+
+=$bodypart= will be replaced with a (probably not scientific) name of a
+body part.
+
+** Number variables
+   :PROPERTIES:
+   :CUSTOM_ID: number-variables
+   :END:
+
+**** $digit
+     :PROPERTIES:
+     :CUSTOM_ID: digit
+     :END:
+
+=$digit= will be replaced with a random digit from 0 to 9.
+
+=$nonzero= will be replaced with a random digit from 1 to 9.
+
+** Inventory
+   :PROPERTIES:
+   :CUSTOM_ID: inventory
+   :END:
+
+Bucket uses the new RFC inventory system. A general ideas-ish page is at
+[[file:Bucket_inventory]].
+
+*** Listing Bucket's inventory
+    :PROPERTIES:
+    :CUSTOM_ID: listing-buckets-inventory
+    :END:
+
+Address =inventory= to Bucket to get a list of what Bucket contains.
+
+*** Adding new items to inventory
+    :PROPERTIES:
+    :CUSTOM_ID: adding-new-items-to-inventory
+    :END:
+
+You can give Bucket new items by making a message that follows the basic
+patterns outlined below. (Replacing ={item}= with the object you wish to
+give to Bucket.)
+
+#+BEGIN_EXAMPLE
+/me puts {item} in Bucket.
+/me gives Bucket {item}
+/me gives {item} to Bucket
+#+END_EXAMPLE
+
+Bucket will ignore your attempt to keep an item in him if the line
+ends with a question mark.  Bucket will also ignore your attempt to
+keep an item in him if the message contains the word =to=.
+
+Bucket will replace the word =his= or =her= with ={nick}'s=, with
+={nick}= being the nick of the person giving him the item. Example:
+=/me gives Bucket his banana= would add =<nick>' banana= to Bucket's
+inventory. Bucket will not accept duplicate items.
+
+*** Deleting inventory items
+    :PROPERTIES:
+    :CUSTOM_ID: deleting-inventory-items
+    :END:
+
+Ops can delete items from the inventory (which will also stop them from
+ever being automatically created) using the =detailed inventory= and
+=delete item #X= commands.
+
+*** Inventory variables
+    :PROPERTIES:
+    :CUSTOM_ID: inventory-variables
+    :END:
+
+**** $item
+     :PROPERTIES:
+     :CUSTOM_ID: item
+     :END:
+
+=$item= will be replaced by a randomly selected item from Bucket's
+inventory.
+
+**** $giveitem
+     :PROPERTIES:
+     :CUSTOM_ID: giveitem
+     :END:
+
+=$giveitem= will be replaced by a randomly selected item from Bucket's
+inventory and will discard the item.
+
+-  :: Use sparingly.Creating a factoid that discards many items will
+  make a fury of ten thousand toilet rolls descend upon you.
+
+**** $newitem
+     :PROPERTIES:
+     :CUSTOM_ID: newitem
+     :END:
+
+=$newitem= will be replaced by a randomly selected item from a list of
+various items Bucket has accumulated over time and will then add the
+item to his current inventory.
+
+** Gender
+   :PROPERTIES:
+   :CUSTOM_ID: gender
+   :END:
+
+Bucket now has support for genders with the RFC [[file:Bucket_Gender]].
+More specifically, you will be able to tell Bucket by which pronoun you
+would like to be referred to.
+
+*** Grammatical genders
+    :PROPERTIES:
+    :CUSTOM_ID: grammatical-genders
+    :END:
+
+This is a table of the five types of genders that you can choose and
+what pronouns are associated with them:
+
+| Grammatical Gender | Subjective | Objective | Reflexive | Possessive Pronoun | Possessive Determiner |
+|--------------------+------------+-----------+-----------+--------------------+-----------------------|
+| Male               | he         | him       | himself   | his                | his                   |
+| Female             | she        | her       | herself   | hers               | her                   |
+| Androgynous        | they       | them      | themself  | theirs             | their                 |
+| Inanimate          | it         | it        | itself    | its                | its                   |
+| Full name          | <name>     | <name>    | <name>    | <name>'s           | <name>                |
+
+- The male set of pronouns uses the traditionally male pronouns, "he",
+  "him" and "himself".
+- The female set of pronouns uses the traditionally female pronouns,
+  "she", "her" and "herself".
+- The androgynous set of pronouns uses the gender neutral singular they,
+  "they", "them" and "themself".
+- The inanimate set of pronouns uses the gender neutral "it", often used
+  on inanimate objects, "it" "its" and "itself".
+- The Full name set of..."pronouns" simply uses the user's name.
+
+*** Setting and looking up genders
+    :PROPERTIES:
+    :CUSTOM_ID: setting-and-looking-up-genders
+    :END:
+
+You can set your own gender by addressing =I am {gender}= to Bucket,
+replacing ={gender}= with the gender of your choice.
+
+You can ask what is the gender of another user by asking =what gender
+is {username}=.
+
+*** Gender Variables
+    :PROPERTIES:
+    :CUSTOM_ID: gender-variables
+    :END:
+
+The following variables can be used in factoids, and will use the
+correct pronoun if a factoid contains =$someone= or =$who=.
+
+|            | Subjective                                           | Objective                                         | Reflexive                                                                              | Possessive Pronoun                                | Possessive Determiner                   |
+|------------+------------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------------------------------+---------------------------------------------------+-----------------------------------------|
+| Variable   | $subjective, $shehe, $heshe, $he, $she, $they, $it   | $objective, $him, $her, $them, $himher, $herhim   | $reflexive, $himselfherself, $herselfhimself, $himself, $herself, $themself, $itself   | $possessive, $hishers, $hershis, $hers, $theirs   | $determiner, $hisher, $herhis, $their   |
+
+** Special Factoids
+   :PROPERTIES:
+   :CUSTOM_ID: special-factoids
+   :END:
+
+There are a few factoids that are used to generate replies to specific
+situations:
+
+- =Don't know= :: Called when a factoid is requested that has no values.
+  These responses are taught by the channel ops. (I don't know anything
+  about that.)
+- =Band name reply= :: Called randomly when someone uses a short phrase
+  that sounds like a band name (=<reply> "$band" would be a good name for  a band.=)
+- =Tumblr name reply= :: Called randomly when someone uses a short phrase
+  that sounds like a tumblr name (=<reply> [[http://$band.tumblr.com]]=).
+  Sometimes the tumblr name is so awesome that a
+  [[file:Denizens][denizen]] creates it. A list of Bucket-created
+  tumblrs can be found [[file:tumblr][here]].
+- =Duplicate item= :: Called when someone puts an item that is already in
+  the inventory (=<reply> $who: I already have $item.=)
+- =Drops item= :: Called when an item drop is forced (=<action> fumbles and drops $giveitem.=)
+- =Pickup full= :: Called when an item is handed to a user, but (s)he has
+  already been given something (=<action> hands $who $giveitem for $item=)
+- =Takes item= :: Called when an item is taken (=<action> is now carrying $item.=)
+- =List items= :: Called when someone asks for Bucket's inventory (uses
+  variable $inventory)
+- =Uses reply= :: Called when someone says =uses <XYZ>=
+- =Automatic Haiku= :: Called when a haiku is detected
+
+** Special Functions (non-factoids)
+   :PROPERTIES:
+   :CUSTOM_ID: special-functions-non-factoids
+   :END:
+
+- =10+2= :: Bucket can do basic math (=+,-,*,/,**=). For that to work he
+  needs to be addressed, the line may only contain numbers and the
+  aforementioned operations and there must not be a factoid for it (as
+  example, =1+1= has its own factoids).
+- =bad-ass= :: If a message contains a phrase similar to =$adjective-ass $noun= (like bad-ass car), Bucket will shift the hyphen. See also
+  [[http://xkcd.com/37/][Hyphen]]
+- =Do you know?= :: If a message starts with the phrase "do you know",
+  Bucket will respond with "No, but if you hum a few bars I can fake it.
+- =Say it again= :: If anybody says a line that starts with "say" and
+  Bucket is not being addressed, Bucket will repeat everything after say
+  followed by an exclamation mark.
+- sexchange :: If a message contains a word starting with ex, there's a
+  random chance Bucket will repeat the phrase, substituting ex with sex
+- super effective! :: If anybody says a line (or performs an action)
+  that starts with "uses", Bucket may respond with "It's super
+  effective!"
+- TLA :: A three letter acronym without any punctuation will cause
+  Bucket to respond with a potential meaning of the three letter
+  acronym, even when not addressed. The meanings are phrases Bucket
+  considers good band names.
+- the fucking :: If a message contains the phrase "the fucking", Bucket
+  will swap both words
+
+
+** Filling silence
+   :PROPERTIES:
+   :CUSTOM_ID: filling-silence
+   :END:
+
+If nobody has said anything in a while (about three minutes), Bucket
+will sometimes quote something from one of the following websites:
+
+- [[http://mylifeisaverage.com/][MyLifeIsAverage]]
+- [[http://twitter.com/Shitmydadsays][Shit My Dad Says (Twitter)]]
+- [[http://twitter.com/FakeAPStylebook][Fake AP Stylebook (Twitter)]]
+- [[http://twitter.com/FakeAnimalFacts][Fake Animal Facts (Twitter)]]
+- [[http://twitter.com/God_Damn_Batman][God Damn Batman (Twitter)]]
+
+If Bucket doesn't quote one of the websites, he displays a random
+factoid.
+
+* Making your own Bucket
+  :PROPERTIES:
+  :CUSTOM_ID: making-your-own-bucket
+  :END:
+
+** Installing
+   :PROPERTIES:
+   :CUSTOM_ID: installing
+   :END:
+
+- Download the source files from
+  [[http://github.com/zigdon/xkcd-Bucket/]], or using git, mirror the
+  repository from here: [[http://github.com/zigdon/xkcd-Bucket.git]]
+
+#+BEGIN_EXAMPLE
+
+$ wget http://github.com/zigdon/xkcd-Bucket/raw/master/bucket.pl
+$ wget http://github.com/zigdon/xkcd-Bucket/raw/master/bucket.sql
+$ wget http://github.com/zigdon/xkcd-Bucket/raw/master/bucket.yml
+$ wget http://github.com/zigdon/xkcd-Bucket/raw/master/sample.sql
+
+#+END_EXAMPLE
+
+- Setup a database (MySQL recommended) - for example, on debian or  ubuntu:
+
+#+BEGIN_EXAMPLE
+$ sudo apt-get install mysql-server
+#+END_EXAMPLE
+
+- Create the tables described in bucket.sql. Note that for the following
+  commands, you may need to add the arguments "--user=root --password"
+  to the mysql commands or it will complain that you are not authorized.
+
+#+BEGIN_EXAMPLE
+
+$ mysqladmin create bucket
+$ mysql -D bucket < bucket.sql
+$ mysql -D bucket < sample.sql
+
+#+END_EXAMPLE
+
+- Create a user for bucket, and grant all privs on the bucket database
+
+#+BEGIN_EXAMPLE
+$ echo 'grant all on bucket.* to bucket identified by "s3kr1tP@ss"' | mysql
+#+END_EXAMPLE
+
+- Edit config file (bucket.yml)
+- Install perl modules (this might take a while):
+
+#+BEGIN_EXAMPLE
+$ sudo cpan POE POE::Component::IRC POE::Component::SimpleDBI Lingua::EN::Conjugate Lingua::EN::Inflect Lingua::EN::Syllable YAML HTML::Entities URI::Escape XML::Simple
+
+#+END_EXAMPLE
+- Set bucket.pl executable
+
+#+BEGIN_EXAMPLE
+$ chmod +x bucket.pl
+#+END_EXAMPLE
+
+- Pre-flight checklist
+
+  - Register your bucket's nick with NickServ.
+  - Register your bucket's logging and config channels (if needed), and
+    configure them as private and restricted.
+  - Add your bucket's nick to the allow list for the logging and config
+    channels.
+
+- Start bucket:
+
+#+BEGIN_EXAMPLE
+$ ./bucket.pl
+#+END_EXAMPLE
+
+- Start adding new factoids.
+
+** Configuration Variables
+   :PROPERTIES:
+   :CUSTOM_ID: configuration-variables
+   :END:
+
+| Name                       | Type    | Meaning                                                                                    | Default Value |
+|----------------------------+---------+--------------------------------------------------------------------------------------------+---------------|
+| =autoload_plugins=         | string  | Space separated list of plugin names to load at startup                                    |   quote topic |
+| =band_name=                | percent | Chance of checking for a good band name.                                                   |             5 |
+| =band_var=                 | string  | The variable used for band names.                                                          |          band |
+| =ex_to_sex=                | percent | Chance of replacing 'ex' with 'sex'.                                                       |             1 |
+| =file_input=               |         |                                                                                            |               |
+| =hide_hostmask=            | integer | 0 = don't hide hostmask, 1 = hide hostmask.                                                |             0 |
+| =identify_before_autojoin= |         |                                                                                            |               |
+| =idle_source=              | string  | Source of idle chatter. Current values: MLIA, IMMD, SMDS, factoid, random                  |       factoid |
+| =increase_mute=            | integer | How much longer a shut up command will last each time $nick is addressed while shutting up |            60 |
+| =inventory_preload=        | integer | How many items should be in the inventory when starting up.                                |             0 |
+| =inventory_size=           | integer | How many items can we hold. Hard limit is twice that number.                               |            20 |
+| =lookup_tla=               |         |                                                                                            |               |
+| =max_sub_length=           |         |                                                                                            |               |
+| =minimum_length=           | integer | What is the minimum length factoid that can trigger Bucket                                 |               |
+| =nickserv_msg=             |         |                                                                                            |               |
+| =nickserv_nick=            |         |                                                                                            |               |
+| =item_drop_rate=           | integer | How many items should be dropped at once when we're over the soft limit                    |             3 |
+| =plugin_dir=               | string  | Path to the directory containing all available plugins                                     |       plugins |
+| =random_item_cache_size=   | integer | How many random items should be stored in memory                                           |            20 |
+| =random_wait=              | integer | How long should the channel be idle before idle chatter is called                          |             3 |
+| =user_activity_timeout=    | integer | How long does a user need to be quiet to not be considered for $someone                    |           360 |
+| =repeated_queries=         |         |                                                                                            |               |
+| =the_fucking=              | percent | Chance of the fucking smartassery.                                                         |           100 |
+| =timeout=                  |         |                                                                                            |               |
+| =tumblr_name=              |         |                                                                                            |               |
+| =user_mode=                |         |                                                                                            |               |
+| =uses_reply=               |         |                                                                                            |               |
+| =value_cache_limit=        |         |                                                                                            |               |
+| =var_limit=                |         |                                                                                            |               |
+| =your_mom_is=              | percent | Chance of refusing to learn a new factoid, insulting your mother instead                   |             5 |
+| =www_root=                 | string  | Path to directory in which literal[*] output should be saved                               |       /empty/ |
+| =www_url=                  | string  | URL to that same directory                                                                 |       /empty/ |
+
+*** From Plugins
+    :PROPERTIES:
+    :CUSTOM_ID: from-plugins
+    :END:
+
+The following configuration variables are available when the appropriate
+plugin is loaded:
+
+| Plugin     | Name              | Type    | Meaning                                                           |
+|------------+-------------------+---------+-------------------------------------------------------------------|
+| =bananas=  | =bananas_chance=  | percent | Chance of randomly saying "bananas"                               |
+| =quotes=   | =history_size=    | integer | How many lines should be remembered back for the quoting function |
+| =squirrel= | =squirrel_chance= | integer | Chance of triggering the squirrel sequence                        |
+| =squirrel= | =squirrel_shock=  | integer | Length of the squence                                             |
+
+** Sourcecode
+   :PROPERTIES:
+   :CUSTOM_ID: sourcecode
+   :END:
+
+This version of Bucket has been in channel since January 21, 2009.
+Bucket's sourcecode is available on
+[[https://github.com/zigdon/xkcd-Bucket/tree/master][github]]. He's
+written in perl, by the way.
+
+** Variable editing
+   :PROPERTIES:
+   :CUSTOM_ID: variable-editing
+   :END:
+
+Some variables can be edited.
+
+*** Editable variables
+    :PROPERTIES:
+    :CUSTOM_ID: editable-variables
+    :END:
+
+All editable variables are currently protected, which means they
+cannot be edited by normal users.
+
+Parts of speech
+
+- =$adjective=
+- =$adverb=
+- =$article=
+- =$noun=
+- =$preposition=
+- =$soiafpreposition=
+- =$verb=
+
+People
+
+- =$band=
+- =$op=
+- =$celebrity=
+
+Places
+
+- =$country=
+- =$room=
+- =$state=
+- =$place=
+
+Things
+
+- =$bodypart=
+- =$color=
+- =$ejaculation=
+- =$gait=
+- =$mood=
+- =$occupation=
+- =$profession=
+- =$official=
+- =$vehicle=
+- =$weekday=
+
+Critters
+
+- =$animal=
+- =$op=
+- =$pokemon=
+
+Numbers
+
+- =$digit=
+- =$nonzero=
+- =$hex=
+
+
+*** Listing editable variables
+     :PROPERTIES:
+     :CUSTOM_ID: listing-editable-variables
+     :END:
+
+Address =list vars= to Bucket to get a list of known variables that are
+editable.
+
+*** Listing the values in a variable
+     :PROPERTIES:
+     :CUSTOM_ID: listing-the-values-in-a-variable
+     :END:
+
+You can get all the values in a variable by using =list var {variable}=
+with ={variable}= being replaced by the variable you wish to see.
+
+-  :: Bucket will display a link to the list of variables if there are
+  too many variables to list. (Similar to =literal[*]=)
+
+*** Adding to a variable
+     :PROPERTIES:
+     :CUSTOM_ID: adding-to-a-variable
+     :END:
+
+Addressing =add value {variable} {value}= (replace ={variable}= with the
+variable you wish to add to and replace ={value}= with the thing you
+wish to add to the variable) to Bucket will add a value to that
+variable.
+
+*** Removing from a variable
+     :PROPERTIES:
+     :CUSTOM_ID: removing-from-a-variable
+     :END:
+
+=remove value {variable} {value}= (again, replace ={variable}= with the
+variable you wish to remove from and replace ={value}= with the thing
+you wish to remove from the variable).
+
+
+*** Setting a variable type
+     :PROPERTIES:
+     :CUSTOM_ID: setting-a-variable-type
+     :END:
+
+=var {variable} type {var|verb|noun}= Sets the "type" of a variable.
+Verb type variables can accept a "-ing" and "-ed" and "-s" suffix, while
+noun types can accept "-s" and update the "a/an" prefix. You can see
+whether a variable what type a variable is by using "list vars" and
+checking if there is a "(n)" for noun-types or a "(v)" for verb-types
+behind the variable.
+
+** User Commands
+   :PROPERTIES:
+   :CUSTOM_ID: user-commands
+   :END:
+
+*** Adding factoids
+
+#+BEGIN_EXAMPLE
+  X is Y
+  X are Y (plural)
+  X <reply> Y
+  X <action> Y
+  X <<verb>> Y
+#+END_EXAMPLE
+
+Where =<verb>= is some verb, for example: =X <drinks> Y=.
+It lets you use a verb that isn't "is" or "are"!
+
+*** Listings
+
+- =literal X= gives the first few factoids for X
+- =literal[#] X= pages through the next factoids for X
+- =literal[*] X= dump out all the factoids for X to a URL
+- =list items= or =inventory= lists out the current inventory.
+
+*** Select
+
+Pick a factoid at random from the factoids of =X= that includes
+=phrase=:
+
+#+BEGIN_EXAMPLE
+  X =~ /phrase/
+#+END_EXAMPLE
+
+*** Edit
+
+Bucket will replace the first instance of =a=
+it finds with =b= in the factoid called =X=:
+
+#+BEGIN_EXAMPLE
+  X =~ s/a/b/
+#+END_EXAMPLE
+
+Or, =undo last= will undo the last modification made (only works if it
+was done by the same user who calls undo)
+
+*** Keywords
+
+- =$who= :: when a factoid is triggered, all instances of this keyword
+  will be substituted for by the nick of whomever triggers the factoid.
+- =$someone= :: replaces with the nick of a random person who may or may
+  not be in channel at the time.
+- =$item= :: replaces with a random item in his inventory.
+- =$giveitem= :: replaces with a random item in his inventory, and deletes
+  that item.
+
+*** Commands
+
+- =shut up= :: stop talking in channel for one minute.
+- =stats= :: Give some numbers on what Bucket knows and has
+  learned. The totals update every 10 minutes or so.
+- =something random= :: Show a random factoid.
+- =what was that?= :: will respond with the factoid related to the
+  last tidbit uttered.
+- =list vars= :: show all the defined variables
+- =list var {variable}= :: show all the values of a variable (or
+  at least as many as would fit in one line)
+- =add value {variable} {value}= :: add a new value to the already
+  defined variable (only if it's unprotected)
+- =remove value {var} {value}= :: remove value <value> from
+  variable (only if it's unprotected)
+- =remember {nick} {snippet}= :: Look in the last few lines in channel
+     for a line containing the partial line mentioned. If found, add
+     it to a =nick quotes= factoid in the form of =<{nick}> {line that
+     was found}=. The number of lines remembered per channel is
+     controlled by the =history_size= parameter.
+- =I am {gender}= :: Tell bucket what gender he should use to
+  refer to you. See the gender docs for complete details.
+- =what is my gender?= :: Ask bucket to report your gender.
+- =restore topic= :: Ask Bucket to restore the previous topic in
+  the current channel, if possible.
+- =how many syllables in {word}?= :: Find the number of syllables
+  Bucket believes to be in the word, as used to find haiku.
+
+*** Ops only commands
+    :PROPERTIES:
+    :CUSTOM_ID: ops-only-commands
+    :END:
+
+**** Factoids
+     :PROPERTIES:
+     :CUSTOM_ID: factoids
+     :END:
+
+- =alias X => Y= :: make requests for =X= return =Y=. Can be chained,
+  cannot be looped.
+- =merge X => Y= :: first move all of the existing factoids from =X=
+  to Y. Then create an alias. Cannot (currently) be undone.
+- =delete X= :: delete all the factoids for =X=.
+- =delete #nnnnn= :: delete the factoid numbered #nnnnn.
+- =forget that= :: delete the most recent factoid referenced in
+  this channel (only that answer, not the entire factoid).
+- =forget #nnnnn= :: delete the factoid numbered #nnnnn.
+  this doesn't work in private messages unfortunately.
+- =undo last [#channel]= :: undo the last change made in channel
+  (or in the specified channel).
+- =protect X= :: lock down all the factoids for =X=, so only ops can
+  modify them. If =X= is =$var=, will protect the variable so only ops can
+  add values to and remove values from it.
+- =unprotect X= :: opposite of protect.
+- =lookup #n= :: Show the factoid with ID of =n=.
+- =load plugin foo= :: Look for, and load the plugin named =foo=.
+  Should be found in the plugins directory, with the name =plugin.foo.pl=
+- =unload plugin foo= :: Remove the previously loaded plugin
+
+**** Variables
+     :PROPERTIES:
+     :CUSTOM_ID: variables
+     :END:
+
+- =create var {variable}= :: creates a new variable with that
+  name. By default, new variables are always protected.
+- =remove var {variable}= :: delete the variable.
+- =protect X= :: lock down all the factoids for =X=, so only ops can
+  modify them. If =X= is =$var=, will protect the variable so only ops can
+  add values to and remove values from it.
+- =unprotect X= :: opposite of protect.
+
+**** Items
+     :PROPERTIES:
+     :CUSTOM_ID: items
+     :END:
+
+- =delete item #n= :: delete item number =n= from Bucket's carried
+  inventory and from the database. Use =detailed inventory= to get the
+  item numbers for the current inventory.
+- =detailed inventory= :: list all the items currently carried
+  with item numbers. Required before a =delete item #n= command can be
+  used.
+
+**** Settings
+     :PROPERTIES:
+     :CUSTOM_ID: settings
+     :END:
+
+- =set X Y= :: Set variable =X= to =Y=. If =Y= isn't specified, will
+  list all valid configuration variable names.
+- =get X= :: Read the value of =X=.
+
+**** Users
+     :PROPERTIES:
+     :CUSTOM_ID: users
+     :END:
+
+- =ignore X= :: Ignore anything =X= says.
+- =unignore X= :: Stop ignoring =X=.
+- =list ignored= :: List all who are currently ignored.
+- =exclude X= :: Don't consider =X= as a valid =$someone=.
+- =unexclude X= :: Restore =X= to the possible list of =$someone=.
+- ={nick} is {gender}= :: Set the gender for ={nick}=. See gender
+  docs for the complete details.
+- =don't quote {nick}= :: Don't allow the =remember= command to be
+  used on =<nick>=.
+- =do quote {nick}= :: Undo the =don't quote= command.
+
+**** Miscellaneous commands
+     :PROPERTIES:
+     :CUSTOM_ID: miscellaneous-commands
+     :END:
+
+- =shut up= or =go away= :: stop talking in channel. Bucket will still
+  respond to queries from ops.
+- =shut up for (a min|a moment|a bit|a while)= :: shut up for some
+  time then come back (60 sec|1 min ± 30 sec|6 min ± 2 min|45 min ± 15
+  min). (Ops only; non-ops can say shut up for however long, but Bucket
+  will still only leave for the usual amount of time)
+- =shut up for nnn(s|m|h)= :: shut up for nnn seconds, minutes or
+  hours, then come back. (Ops only; non-ops can say shut up for however
+  long, but Bucket will still only leave for the usual amount of time)
+- =unshut up= or =come back= :: resume talking in channel. (Ops only)
+- =join #X= or =part #X= :: guess!
+- =stat keys= :: List all the known statistic keys.
+- =stat {key}= :: Get the value of that particular key.
+- =restore topic #channel= :: Ask Bucket to restore the previous
+  topic of #channel, if possible.
+- ={word} has {number} syllables= :: Advise Bucket of the number
+  of syllables in the word.
+
