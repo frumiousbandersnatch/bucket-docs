@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-12-29 Wed 10:44 -->
+<!-- 2021-12-29 Wed 11:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bucket (pail on snoonet) documentation</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -191,7 +204,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -270,7 +283,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <p>
-<b>(Rescued from <a href="https://web.archive.org/web/20170228183648/http://wiki.xkcd.com/wirc/index.php?title=Bucket&amp;action=edit">archive.org</a> and converted to <a href="bucket.html">Emacs org mode</a> and then to HTML)</b>
+<b>(Rescued from <a href="https://web.archive.org/web/20170228183648/http://wiki.xkcd.com/wirc/index.php?title=Bucket&amp;action=edit">archive.org</a> and <a href="https://github.com/frumiousbandersnatch/bucket-docs">converted</a> to Emacs org mode and then to <a href="https://frumiousbandersnatch.github.io/bucket-docs/">HTML</a>)</b>
 </p>
 
 <p>
@@ -279,8 +292,8 @@ layer of high density plastic, in which may or may not reside pure HOH.
 There can only be speculation about what else the Bucket contains.
 </p>
 
-<div id="outline-container-orgf959caf" class="outline-2">
-<h2 id="using-the-xkcd-bucket"><a id="orgf959caf"></a>Using the #XKCD Bucket</h2>
+<div id="outline-container-org2263f88" class="outline-2">
+<h2 id="using-the-xkcd-bucket">Using the #XKCD Bucket</h2>
 <div class="outline-text-2" id="text-using-the-xkcd-bucket">
 <ol class="org-ol">
 <li>Do not make our Bucket stupid or mean. Any stupiding of the Bucket
@@ -310,8 +323,8 @@ that way.</li>
 </ol>
 </div>
 
-<div id="outline-container-org0786a1c" class="outline-3">
-<h3 id="addressing"><a id="org0786a1c"></a>Addressing</h3>
+<div id="outline-container-org1a21062" class="outline-3">
+<h3 id="addressing">Addressing</h3>
 <div class="outline-text-3" id="text-addressing">
 <p>
 You need to address Bucket directly to teach him factoids; you can do so
@@ -320,8 +333,8 @@ automatically do this).
 </p>
 </div>
 
-<div id="outline-container-org31dc671" class="outline-4">
-<h4 id="if-bucket-doesnt-reply"><a id="org31dc671"></a>If Bucket doesn't reply</h4>
+<div id="outline-container-orge373bac" class="outline-4">
+<h4 id="if-bucket-doesnt-reply">If Bucket doesn't reply</h4>
 <div class="outline-text-4" id="text-if-bucket-doesnt-reply">
 <ul class="org-ul">
 <li>Make sure you're prefixing messages properly. <code>Bucket~ [command]</code> and
@@ -341,13 +354,13 @@ it to. Probably because you put in some bad factoids.</li>
 </div>
 </div>
 
-<div id="outline-container-orgca3ea44" class="outline-3">
-<h3 id="teaching-factoids-to-bucket"><a id="orgca3ea44"></a>Teaching factoids to Bucket</h3>
+<div id="outline-container-org1c45616" class="outline-3">
+<h3 id="teaching-factoids-to-bucket">Teaching factoids to Bucket</h3>
 <div class="outline-text-3" id="text-teaching-factoids-to-bucket">
 </div>
 
-<div id="outline-container-orge699f61" class="outline-5">
-<h5 id="x-is-y"><a id="orge699f61"></a>X is Y</h5>
+<div id="outline-container-org5d6e1ab" class="outline-5">
+<h5 id="x-is-y">X is Y</h5>
 <div class="outline-text-5" id="text-x-is-y">
 <p>
 The most common type of factoid you can teach to Bucket is by simply
@@ -369,8 +382,8 @@ See more ways to verb.</li>
 </div>
 </div>
 
-<div id="outline-container-orga6c7d6e" class="outline-5">
-<h5 id="x-are-y"><a id="orga6c7d6e"></a>X are Y</h5>
+<div id="outline-container-org75fd7ed" class="outline-5">
+<h5 id="x-are-y">X are Y</h5>
 <div class="outline-text-5" id="text-x-are-y">
 <p>
 Similar to <code>X is Y</code>, you can teach this kind of factoid by simply saying
@@ -379,8 +392,8 @@ Similar to <code>X is Y</code>, you can teach this kind of factoid by simply say
 </div>
 </div>
 
-<div id="outline-container-orgd209c47" class="outline-5">
-<h5 id="x-y"><a id="orgd209c47"></a>X &lt;verb&gt; Y</h5>
+<div id="outline-container-org2c34d1e" class="outline-5">
+<h5 id="x-y">X &lt;verb&gt; Y</h5>
 <div class="outline-text-5" id="text-x-y">
 <p>
 You can use other things instead of <code>is</code> or <code>are</code> by putting them inside
@@ -390,8 +403,8 @@ greater and lesser-than signs, such as <code>X &lt;loves&gt; Y</code> or <code>X
 </div>
 
 
-<div id="outline-container-orgc50144a" class="outline-5">
-<h5 id="x-y-1"><a id="orgc50144a"></a>X &lt;reply&gt; Y</h5>
+<div id="outline-container-org8366027" class="outline-5">
+<h5 id="x-y-1">X &lt;reply&gt; Y</h5>
 <div class="outline-text-5" id="text-x-y-1">
 <p>
 You can say <code>X &lt;reply&gt; Y</code>, when someone says <code>X</code>, Bucket will respond <code>Y</code>.
@@ -404,8 +417,8 @@ required so you may see older users use it.</li>
 </div>
 </div>
 
-<div id="outline-container-org65bdfc3" class="outline-5">
-<h5 id="x-y-2"><a id="org65bdfc3"></a>X &lt;action&gt; Y</h5>
+<div id="outline-container-orgbc49221" class="outline-5">
+<h5 id="x-y-2">X &lt;action&gt; Y</h5>
 <div class="outline-text-5" id="text-x-y-2">
 <p>
 If you use <code>X &lt;action&gt; Y</code>, when someone says <code>X</code>, Bucket will use <code>/me Y</code>.
@@ -417,8 +430,8 @@ If you use <code>X &lt;action&gt; Y</code>, when someone says <code>X</code>, Bu
 </div>
 </div>
 
-<div id="outline-container-orge0216c7" class="outline-5">
-<h5 id="slash-commands"><a id="orge0216c7"></a>Slash commands</h5>
+<div id="outline-container-org3395a4a" class="outline-5">
+<h5 id="slash-commands">Slash commands</h5>
 <div class="outline-text-5" id="text-slash-commands">
 <p>
 Bucket is not run on a client; she is her own entity. This means that
@@ -434,8 +447,8 @@ go in on a factoid) is no longer needed.</li>
 </div>
 </div>
 
-<div id="outline-container-org79c8f60" class="outline-5">
-<h5 id="remember-quote"><a id="org79c8f60"></a>Remember quote</h5>
+<div id="outline-container-org8277d43" class="outline-5">
+<h5 id="remember-quote">Remember quote</h5>
 <div class="outline-text-5" id="text-remember-quote">
 <p>
 If you type <code>remember {nick} {snippet}</code> where <code>{snippet}</code> is a snippet
@@ -452,13 +465,13 @@ factoid is triggered, Bucket will respond <code>&lt;Example&gt; Lorem Ipsum</cod
 </div>
 </div>
 
-<div id="outline-container-orge65e959" class="outline-3">
-<h3 id="searching-for-factoids"><a id="orge65e959"></a>Searching for factoids</h3>
+<div id="outline-container-orgb25aeee" class="outline-3">
+<h3 id="searching-for-factoids">Searching for factoids</h3>
 <div class="outline-text-3" id="text-searching-for-factoids">
 </div>
 
-<div id="outline-container-orgb679287" class="outline-5">
-<h5 id="listing-factoids"><a id="orgb679287"></a>Listing factoids</h5>
+<div id="outline-container-org2174cb1" class="outline-5">
+<h5 id="listing-factoids">Listing factoids</h5>
 <div class="outline-text-5" id="text-listing-factoids">
 <p>
 Teh <code>literal X</code> command will give you a list of factoids associated with that
@@ -471,8 +484,8 @@ replacing <code>2</code> with the number of the page you wish to check.
 </div>
 </div>
 
-<div id="outline-container-org8c729ff" class="outline-5">
-<h5 id="list-factoids-in-a-text-file"><a id="org8c729ff"></a>List factoids in a text file</h5>
+<div id="outline-container-orgc9fc105" class="outline-5">
+<h5 id="list-factoids-in-a-text-file">List factoids in a text file</h5>
 <div class="outline-text-5" id="text-list-factoids-in-a-text-file">
 <p>
 Typing <code>literal[*] X</code> will make Bucket produce a url linking to a text
@@ -481,8 +494,8 @@ file of all the factoids associated with that trigger.
 </div>
 </div>
 
-<div id="outline-container-org9835021" class="outline-5">
-<h5 id="triggering-a-specific-factoid"><a id="org9835021"></a>Triggering a specific factoid</h5>
+<div id="outline-container-org9539840" class="outline-5">
+<h5 id="triggering-a-specific-factoid">Triggering a specific factoid</h5>
 <div class="outline-text-5" id="text-triggering-a-specific-factoid">
 <p>
 <code>X =~ /m/</code> will make Bucket reply with the first factoid in that trigger
@@ -491,8 +504,8 @@ which contains <code>m</code>.
 </div>
 </div>
 
-<div id="outline-container-org0a5b649" class="outline-5">
-<h5 id="listing-the-details-of-a-factoid"><a id="org0a5b649"></a>Listing the details of a factoid</h5>
+<div id="outline-container-org55b0d33" class="outline-5">
+<h5 id="listing-the-details-of-a-factoid">Listing the details of a factoid</h5>
 <div class="outline-text-5" id="text-listing-the-details-of-a-factoid">
 <p>
 <code>what was that?</code> will make Bucket list the factoid's details thusly:
@@ -502,13 +515,13 @@ which contains <code>m</code>.
 </div>
 </div>
 
-<div id="outline-container-orga53d430" class="outline-3">
-<h3 id="editing-factoids"><a id="orga53d430"></a>Editing factoids</h3>
+<div id="outline-container-org5dec230" class="outline-3">
+<h3 id="editing-factoids">Editing factoids</h3>
 <div class="outline-text-3" id="text-editing-factoids">
 </div>
 
-<div id="outline-container-orgb926d8a" class="outline-5">
-<h5 id="substitution-editing"><a id="orgb926d8a"></a>Substitution editing</h5>
+<div id="outline-container-org768fd7f" class="outline-5">
+<h5 id="substitution-editing">Substitution editing</h5>
 <div class="outline-text-5" id="text-substitution-editing">
 <p>
 Telling Bucket <code>X =~ s/m/n/</code> will replace <code>m</code> with <code>n</code> in the factoids
@@ -527,8 +540,8 @@ you could type: <code>Bucket: The best site =~ s,http://google.com/search,http:/
 </div>
 </div>
 
-<div id="outline-container-org435b409" class="outline-5">
-<h5 id="undo"><a id="org435b409"></a>Undo</h5>
+<div id="outline-container-org0e334bc" class="outline-5">
+<h5 id="undo">Undo</h5>
 <div class="outline-text-5" id="text-undo">
 <p>
 <code>undo last</code> undoes the last change made to a factoid (editing one,
@@ -539,8 +552,8 @@ last change.
 </div>
 </div>
 
-<div id="outline-container-orgfcdd028" class="outline-3">
-<h3 id="word-class-variable"><a id="orgfcdd028"></a>Word class variable</h3>
+<div id="outline-container-org5996910" class="outline-3">
+<h3 id="word-class-variable">Word class variable</h3>
 <div class="outline-text-3" id="text-word-class-variable">
 <p>
 Putting a word class variable in a factoid will replace the variable
@@ -549,8 +562,8 @@ Bucket's responses. For example, telling bucket <code>play with $who &lt;reply&g
 </p>
 </div>
 
-<div id="outline-container-org511884e" class="outline-5">
-<h5 id="noun"><a id="org511884e"></a>$noun</h5>
+<div id="outline-container-orgaf34740" class="outline-5">
+<h5 id="noun">$noun</h5>
 <div class="outline-text-5" id="text-noun">
 <p>
 Use <code>$noun</code> to place a noun variable which will become a noun when the
@@ -560,8 +573,8 @@ if you use <code>a $noun</code> or <code>some $nouns</code>.
 </div>
 </div>
 
-<div id="outline-container-orgfae4175" class="outline-5">
-<h5 id="verb"><a id="orgfae4175"></a>$verb</h5>
+<div id="outline-container-org4f2611f" class="outline-5">
+<h5 id="verb">$verb</h5>
 <div class="outline-text-5" id="text-verb">
 <p>
 Use <code>$verb</code> to place a verb variable which will become a verb when the
@@ -571,8 +584,8 @@ factoid is triggered.  Bucket knows plurals and tenses so <code>$verbs</code>,
 </div>
 </div>
 
-<div id="outline-container-org74c5a8f" class="outline-5">
-<h5 id="adjective"><a id="org74c5a8f"></a>$adjective</h5>
+<div id="outline-container-orgd28bc95" class="outline-5">
+<h5 id="adjective">$adjective</h5>
 <div class="outline-text-5" id="text-adjective">
 <p>
 Use <code>$adjective</code> to place an adjective variable which will become an
@@ -581,8 +594,8 @@ adjective when the factoid is triggered.
 </div>
 </div>
 
-<div id="outline-container-org82125c6" class="outline-5">
-<h5 id="preposition"><a id="org82125c6"></a>$preposition</h5>
+<div id="outline-container-orgfd81d99" class="outline-5">
+<h5 id="preposition">$preposition</h5>
 <div class="outline-text-5" id="text-preposition">
 <p>
 Use <code>$preposition</code> to place a proposition variable which will become a
@@ -592,8 +605,8 @@ preposition when the factoid is triggered.
 </div>
 </div>
 
-<div id="outline-container-org8caf230" class="outline-3">
-<h3 id="username-variables"><a id="org8caf230"></a>Username variables</h3>
+<div id="outline-container-org441e8a4" class="outline-3">
+<h3 id="username-variables">Username variables</h3>
 <div class="outline-text-3" id="text-username-variables">
 <p>
 Putting a username variable in a factoid will replace the variable with
@@ -601,8 +614,8 @@ a username when triggered.
 </p>
 </div>
 
-<div id="outline-container-org325ba09" class="outline-5">
-<h5 id="who"><a id="org325ba09"></a>$who</h5>
+<div id="outline-container-orgaf425b4" class="outline-5">
+<h5 id="who">$who</h5>
 <div class="outline-text-5" id="text-who">
 <p>
 <code>$who</code> will be replaced by the name of the person who triggered the
@@ -611,8 +624,8 @@ factoid.
 </div>
 </div>
 
-<div id="outline-container-org0fbaf9a" class="outline-5">
-<h5 id="someone"><a id="org0fbaf9a"></a>$someone</h5>
+<div id="outline-container-org8d4c9b7" class="outline-5">
+<h5 id="someone">$someone</h5>
 <div class="outline-text-5" id="text-someone">
 <p>
 <code>$someone</code> will be replaced by a username chosen from recent posters.
@@ -622,8 +635,8 @@ Bucket doesn't bother idle users as much.
 </div>
 </div>
 
-<div id="outline-container-org7dc24fc" class="outline-5">
-<h5 id="to"><a id="org7dc24fc"></a>$to</h5>
+<div id="outline-container-org1515e80" class="outline-5">
+<h5 id="to">$to</h5>
 <div class="outline-text-5" id="text-to">
 <p>
 <code>$to</code> will be replaced by the intended recipient, e.g. <code>&lt;Someone&gt;
@@ -633,8 +646,8 @@ intended recipient, it will fall back on <code>$someone</code>.
 </div>
 </div>
 
-<div id="outline-container-org643a75e" class="outline-5">
-<h5 id="op"><a id="org643a75e"></a>$op</h5>
+<div id="outline-container-org17b99c7" class="outline-5">
+<h5 id="op">$op</h5>
 <div class="outline-text-5" id="text-op">
 <p>
 <code>$op</code> will be replaced by the name of one of the Ops.  Pro tip: annoy
@@ -644,13 +657,13 @@ ops at your own risk.
 </div>
 </div>
 
-<div id="outline-container-org7e7edb3" class="outline-3">
-<h3 id="object-variables"><a id="org7e7edb3"></a>Object variables</h3>
+<div id="outline-container-orga64868a" class="outline-3">
+<h3 id="object-variables">Object variables</h3>
 <div class="outline-text-3" id="text-object-variables">
 </div>
 
-<div id="outline-container-org1dae6e7" class="outline-5">
-<h5 id="vehicle"><a id="org1dae6e7"></a>$vehicle</h5>
+<div id="outline-container-org2e95b29" class="outline-5">
+<h5 id="vehicle">$vehicle</h5>
 <div class="outline-text-5" id="text-vehicle">
 <p>
 <code>$vehicle</code> will be replaced with a vehicle.
@@ -658,8 +671,8 @@ ops at your own risk.
 </div>
 </div>
 
-<div id="outline-container-orgfaf1f56" class="outline-5">
-<h5 id="room"><a id="orgfaf1f56"></a>$room</h5>
+<div id="outline-container-orgdd153a6" class="outline-5">
+<h5 id="room">$room</h5>
 <div class="outline-text-5" id="text-room">
 <p>
 <code>$room</code> will be replaced with a room.
@@ -667,8 +680,8 @@ ops at your own risk.
 </div>
 </div>
 
-<div id="outline-container-org274c1f0" class="outline-5">
-<h5 id="ejaculation"><a id="org274c1f0"></a>$ejaculation</h5>
+<div id="outline-container-org3e40423" class="outline-5">
+<h5 id="ejaculation">$ejaculation</h5>
 <div class="outline-text-5" id="text-ejaculation">
 <p>
 <code>$ejaculation</code> will be replaced with a exclamation. <i>Support for this
@@ -677,8 +690,8 @@ feature is deprecated</i>
 </div>
 </div>
 
-<div id="outline-container-org1c4e05a" class="outline-5">
-<h5 id="celebrity"><a id="org1c4e05a"></a>$celebrity</h5>
+<div id="outline-container-org2c53d66" class="outline-5">
+<h5 id="celebrity">$celebrity</h5>
 <div class="outline-text-5" id="text-celebrity">
 <p>
 <code>$celebrity</code> will be replaced with a name of a celebrity.
@@ -686,8 +699,8 @@ feature is deprecated</i>
 </div>
 </div>
 
-<div id="outline-container-orga834bfa" class="outline-5">
-<h5 id="mood"><a id="orga834bfa"></a>$mood</h5>
+<div id="outline-container-orgc017a2b" class="outline-5">
+<h5 id="mood">$mood</h5>
 <div class="outline-text-5" id="text-mood">
 <p>
 <code>$mood</code> will be replaced with a name of a mood.
@@ -695,8 +708,8 @@ feature is deprecated</i>
 </div>
 </div>
 
-<div id="outline-container-org0db5852" class="outline-5">
-<h5 id="color"><a id="org0db5852"></a>$color</h5>
+<div id="outline-container-orgfed56e5" class="outline-5">
+<h5 id="color">$color</h5>
 <div class="outline-text-5" id="text-color">
 <p>
 <code>$color</code> will be replaced with the name of a color.
@@ -704,8 +717,8 @@ feature is deprecated</i>
 </div>
 </div>
 
-<div id="outline-container-orgfa89d94" class="outline-5">
-<h5 id="bodypart"><a id="orgfa89d94"></a>$bodypart</h5>
+<div id="outline-container-orgdfa5eea" class="outline-5">
+<h5 id="bodypart">$bodypart</h5>
 <div class="outline-text-5" id="text-bodypart">
 <p>
 <code>$bodypart</code> will be replaced with a (probably not scientific) name of a
@@ -715,13 +728,13 @@ body part.
 </div>
 </div>
 
-<div id="outline-container-org5e73dda" class="outline-3">
-<h3 id="number-variables"><a id="org5e73dda"></a>Number variables</h3>
+<div id="outline-container-orgf79bfdf" class="outline-3">
+<h3 id="number-variables">Number variables</h3>
 <div class="outline-text-3" id="text-number-variables">
 </div>
 
-<div id="outline-container-orgd6b3428" class="outline-5">
-<h5 id="digit"><a id="orgd6b3428"></a>$digit</h5>
+<div id="outline-container-org892df9e" class="outline-5">
+<h5 id="digit">$digit</h5>
 <div class="outline-text-5" id="text-digit">
 <p>
 <code>$digit</code> will be replaced with a random digit from 0 to 9.
@@ -734,8 +747,8 @@ body part.
 </div>
 </div>
 
-<div id="outline-container-orgd082d07" class="outline-3">
-<h3 id="inventory"><a id="orgd082d07"></a>Inventory</h3>
+<div id="outline-container-org6e7bbc2" class="outline-3">
+<h3 id="inventory">Inventory</h3>
 <div class="outline-text-3" id="text-inventory">
 <p>
 Bucket uses the new RFC inventory system. A general ideas-ish page is at
@@ -743,8 +756,8 @@ Bucket uses the new RFC inventory system. A general ideas-ish page is at
 </p>
 </div>
 
-<div id="outline-container-org1e4717b" class="outline-4">
-<h4 id="listing-buckets-inventory"><a id="org1e4717b"></a>Listing Bucket's inventory</h4>
+<div id="outline-container-org05c4df5" class="outline-4">
+<h4 id="listing-buckets-inventory">Listing Bucket's inventory</h4>
 <div class="outline-text-4" id="text-listing-buckets-inventory">
 <p>
 Address <code>inventory</code> to Bucket to get a list of what Bucket contains.
@@ -752,8 +765,8 @@ Address <code>inventory</code> to Bucket to get a list of what Bucket contains.
 </div>
 </div>
 
-<div id="outline-container-org56fd908" class="outline-4">
-<h4 id="adding-new-items-to-inventory"><a id="org56fd908"></a>Adding new items to inventory</h4>
+<div id="outline-container-orgf477ff2" class="outline-4">
+<h4 id="adding-new-items-to-inventory">Adding new items to inventory</h4>
 <div class="outline-text-4" id="text-adding-new-items-to-inventory">
 <p>
 You can give Bucket new items by making a message that follows the basic
@@ -782,8 +795,8 @@ inventory. Bucket will not accept duplicate items.
 </div>
 </div>
 
-<div id="outline-container-org8034d12" class="outline-4">
-<h4 id="deleting-inventory-items"><a id="org8034d12"></a>Deleting inventory items</h4>
+<div id="outline-container-org87b652e" class="outline-4">
+<h4 id="deleting-inventory-items">Deleting inventory items</h4>
 <div class="outline-text-4" id="text-deleting-inventory-items">
 <p>
 Ops can delete items from the inventory (which will also stop them from
@@ -793,13 +806,13 @@ ever being automatically created) using the <code>detailed inventory</code> and
 </div>
 </div>
 
-<div id="outline-container-org6edd09d" class="outline-4">
-<h4 id="inventory-variables"><a id="org6edd09d"></a>Inventory variables</h4>
+<div id="outline-container-org54ae38c" class="outline-4">
+<h4 id="inventory-variables">Inventory variables</h4>
 <div class="outline-text-4" id="text-inventory-variables">
 </div>
 
-<div id="outline-container-org6432254" class="outline-5">
-<h5 id="item"><a id="org6432254"></a>$item</h5>
+<div id="outline-container-org72e0747" class="outline-5">
+<h5 id="item">$item</h5>
 <div class="outline-text-5" id="text-item">
 <p>
 <code>$item</code> will be replaced by a randomly selected item from Bucket's
@@ -808,8 +821,8 @@ inventory.
 </div>
 </div>
 
-<div id="outline-container-orgd774246" class="outline-5">
-<h5 id="giveitem"><a id="orgd774246"></a>$giveitem</h5>
+<div id="outline-container-orgc13194d" class="outline-5">
+<h5 id="giveitem">$giveitem</h5>
 <div class="outline-text-5" id="text-giveitem">
 <p>
 <code>$giveitem</code> will be replaced by a randomly selected item from Bucket's
@@ -823,8 +836,8 @@ make a fury of ten thousand toilet rolls descend upon you.</li>
 </div>
 </div>
 
-<div id="outline-container-org086ad33" class="outline-5">
-<h5 id="newitem"><a id="org086ad33"></a>$newitem</h5>
+<div id="outline-container-org38fcbdd" class="outline-5">
+<h5 id="newitem">$newitem</h5>
 <div class="outline-text-5" id="text-newitem">
 <p>
 <code>$newitem</code> will be replaced by a randomly selected item from a list of
@@ -836,8 +849,8 @@ item to his current inventory.
 </div>
 </div>
 
-<div id="outline-container-orgd2e527a" class="outline-3">
-<h3 id="gender"><a id="orgd2e527a"></a>Gender</h3>
+<div id="outline-container-org6aa9a56" class="outline-3">
+<h3 id="gender">Gender</h3>
 <div class="outline-text-3" id="text-gender">
 <p>
 Bucket now has support for genders with the RFC <a href="Bucket_Gender">Bucket_Gender</a>.
@@ -846,8 +859,8 @@ would like to be referred to.
 </p>
 </div>
 
-<div id="outline-container-org833ded5" class="outline-4">
-<h4 id="grammatical-genders"><a id="org833ded5"></a>Grammatical genders</h4>
+<div id="outline-container-org4f9adec" class="outline-4">
+<h4 id="grammatical-genders">Grammatical genders</h4>
 <div class="outline-text-4" id="text-grammatical-genders">
 <p>
 This is a table of the five types of genders that you can choose and
@@ -942,8 +955,8 @@ on inanimate objects, "it" "its" and "itself".</li>
 </div>
 </div>
 
-<div id="outline-container-orgfb7ed92" class="outline-4">
-<h4 id="setting-and-looking-up-genders"><a id="orgfb7ed92"></a>Setting and looking up genders</h4>
+<div id="outline-container-orge308d5c" class="outline-4">
+<h4 id="setting-and-looking-up-genders">Setting and looking up genders</h4>
 <div class="outline-text-4" id="text-setting-and-looking-up-genders">
 <p>
 You can set your own gender by addressing <code>I am {gender}</code> to Bucket,
@@ -957,8 +970,8 @@ is {username}</code>.
 </div>
 </div>
 
-<div id="outline-container-orgd36a1f6" class="outline-4">
-<h4 id="gender-variables"><a id="orgd36a1f6"></a>Gender Variables</h4>
+<div id="outline-container-org6b8f404" class="outline-4">
+<h4 id="gender-variables">Gender Variables</h4>
 <div class="outline-text-4" id="text-gender-variables">
 <p>
 The following variables can be used in factoids, and will use the
@@ -1006,8 +1019,8 @@ correct pronoun if a factoid contains <code>$someone</code> or <code>$who</code>
 </div>
 </div>
 
-<div id="outline-container-orgf682c87" class="outline-3">
-<h3 id="special-factoids"><a id="orgf682c87"></a>Special Factoids</h3>
+<div id="outline-container-orgc9811ac" class="outline-3">
+<h3 id="special-factoids">Special Factoids</h3>
 <div class="outline-text-3" id="text-special-factoids">
 <p>
 There are a few factoids that are used to generate replies to specific
@@ -1039,8 +1052,8 @@ variable $inventory)</dd>
 </div>
 </div>
 
-<div id="outline-container-org1e2f8b7" class="outline-3">
-<h3 id="special-functions-non-factoids"><a id="org1e2f8b7"></a>Special Functions (non-factoids)</h3>
+<div id="outline-container-org51cee44" class="outline-3">
+<h3 id="special-functions-non-factoids">Special Functions (non-factoids)</h3>
 <div class="outline-text-3" id="text-special-functions-non-factoids">
 <dl class="org-dl">
 <dt><code>10+2</code></dt><dd>Bucket can do basic math (<code>+,-,*,/,**</code>). For that to work he
@@ -1070,8 +1083,8 @@ will swap both words</dd>
 </div>
 
 
-<div id="outline-container-orgfcfd2bc" class="outline-3">
-<h3 id="filling-silence"><a id="orgfcfd2bc"></a>Filling silence</h3>
+<div id="outline-container-org3f9a790" class="outline-3">
+<h3 id="filling-silence">Filling silence</h3>
 <div class="outline-text-3" id="text-filling-silence">
 <p>
 If nobody has said anything in a while (about three minutes), Bucket
@@ -1094,13 +1107,13 @@ factoid.
 </div>
 </div>
 
-<div id="outline-container-org34a0d90" class="outline-2">
-<h2 id="making-your-own-bucket"><a id="org34a0d90"></a>Making your own Bucket</h2>
+<div id="outline-container-orge3b6992" class="outline-2">
+<h2 id="making-your-own-bucket">Making your own Bucket</h2>
 <div class="outline-text-2" id="text-making-your-own-bucket">
 </div>
 
-<div id="outline-container-org18d27ed" class="outline-3">
-<h3 id="installing"><a id="org18d27ed"></a>Installing</h3>
+<div id="outline-container-orge6e33d7" class="outline-3">
+<h3 id="installing">Installing</h3>
 <div class="outline-text-3" id="text-installing">
 <ul class="org-ul">
 <li>Download the source files from
@@ -1188,8 +1201,8 @@ $ ./bucket.pl
 </div>
 </div>
 
-<div id="outline-container-org779db03" class="outline-3">
-<h3 id="configuration-variables"><a id="org779db03"></a>Configuration Variables</h3>
+<div id="outline-container-org5945cbc" class="outline-3">
+<h3 id="configuration-variables">Configuration Variables</h3>
 <div class="outline-text-3" id="text-configuration-variables">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1439,8 +1452,8 @@ $ ./bucket.pl
 </table>
 </div>
 
-<div id="outline-container-orgeeb725e" class="outline-4">
-<h4 id="from-plugins"><a id="orgeeb725e"></a>From Plugins</h4>
+<div id="outline-container-org7eda6ae" class="outline-4">
+<h4 id="from-plugins">From Plugins</h4>
 <div class="outline-text-4" id="text-from-plugins">
 <p>
 The following configuration variables are available when the appropriate
@@ -1501,8 +1514,8 @@ plugin is loaded:
 </div>
 </div>
 
-<div id="outline-container-orgfc4cf62" class="outline-3">
-<h3 id="sourcecode"><a id="orgfc4cf62"></a>Sourcecode</h3>
+<div id="outline-container-org7e9604b" class="outline-3">
+<h3 id="sourcecode">Sourcecode</h3>
 <div class="outline-text-3" id="text-sourcecode">
 <p>
 This version of Bucket has been in channel since January 21, 2009.
@@ -1513,16 +1526,16 @@ written in perl, by the way.
 </div>
 </div>
 
-<div id="outline-container-orga25e6f5" class="outline-3">
-<h3 id="variable-editing"><a id="orga25e6f5"></a>Variable editing</h3>
+<div id="outline-container-orga0de8ff" class="outline-3">
+<h3 id="variable-editing">Variable editing</h3>
 <div class="outline-text-3" id="text-variable-editing">
 <p>
 Some variables can be edited.
 </p>
 </div>
 
-<div id="outline-container-orgde164ae" class="outline-4">
-<h4 id="editable-variables"><a id="orgde164ae"></a>Editable variables</h4>
+<div id="outline-container-orgfb03483" class="outline-4">
+<h4 id="editable-variables">Editable variables</h4>
 <div class="outline-text-4" id="text-editable-variables">
 <p>
 All editable variables are currently protected, which means they
@@ -1604,8 +1617,8 @@ Numbers
 </div>
 
 
-<div id="outline-container-org59edd24" class="outline-4">
-<h4 id="listing-editable-variables"><a id="org59edd24"></a>Listing editable variables</h4>
+<div id="outline-container-org5013021" class="outline-4">
+<h4 id="listing-editable-variables">Listing editable variables</h4>
 <div class="outline-text-4" id="text-listing-editable-variables">
 <p>
 Address <code>list vars</code> to Bucket to get a list of known variables that are
@@ -1614,8 +1627,8 @@ editable.
 </div>
 </div>
 
-<div id="outline-container-orgfe7eeb5" class="outline-4">
-<h4 id="listing-the-values-in-a-variable"><a id="orgfe7eeb5"></a>Listing the values in a variable</h4>
+<div id="outline-container-orgd82dc7d" class="outline-4">
+<h4 id="listing-the-values-in-a-variable">Listing the values in a variable</h4>
 <div class="outline-text-4" id="text-listing-the-values-in-a-variable">
 <p>
 You can get all the values in a variable by using <code>list var {variable}</code>
@@ -1629,8 +1642,8 @@ too many variables to list. (Similar to <code>literal[*]</code>)</li>
 </div>
 </div>
 
-<div id="outline-container-orgb56a6ab" class="outline-4">
-<h4 id="adding-to-a-variable"><a id="orgb56a6ab"></a>Adding to a variable</h4>
+<div id="outline-container-org0c1988c" class="outline-4">
+<h4 id="adding-to-a-variable">Adding to a variable</h4>
 <div class="outline-text-4" id="text-adding-to-a-variable">
 <p>
 Addressing <code>add value {variable} {value}</code> (replace <code>{variable}</code> with the
@@ -1641,8 +1654,8 @@ variable.
 </div>
 </div>
 
-<div id="outline-container-orgf59fd66" class="outline-4">
-<h4 id="removing-from-a-variable"><a id="orgf59fd66"></a>Removing from a variable</h4>
+<div id="outline-container-org6bf7a79" class="outline-4">
+<h4 id="removing-from-a-variable">Removing from a variable</h4>
 <div class="outline-text-4" id="text-removing-from-a-variable">
 <p>
 <code>remove value {variable} {value}</code> (again, replace <code>{variable}</code> with the
@@ -1653,8 +1666,8 @@ you wish to remove from the variable).
 </div>
 
 
-<div id="outline-container-org4ea32b9" class="outline-4">
-<h4 id="setting-a-variable-type"><a id="org4ea32b9"></a>Setting a variable type</h4>
+<div id="outline-container-org136452c" class="outline-4">
+<h4 id="setting-a-variable-type">Setting a variable type</h4>
 <div class="outline-text-4" id="text-setting-a-variable-type">
 <p>
 <code>var {variable} type {var|verb|noun}</code> Sets the "type" of a variable.
@@ -1668,14 +1681,14 @@ behind the variable.
 </div>
 </div>
 
-<div id="outline-container-org03dbd40" class="outline-3">
-<h3 id="user-commands"><a id="org03dbd40"></a>User Commands</h3>
+<div id="outline-container-org5983f5f" class="outline-3">
+<h3 id="user-commands">User Commands</h3>
 <div class="outline-text-3" id="text-user-commands">
 </div>
 
-<div id="outline-container-orgfb15b7f" class="outline-4">
-<h4 id="orgfb15b7f">Adding factoids</h4>
-<div class="outline-text-4" id="text-orgfb15b7f">
+<div id="outline-container-orgd092ca6" class="outline-4">
+<h4 id="orgd092ca6">Adding factoids</h4>
+<div class="outline-text-4" id="text-orgd092ca6">
 <pre class="example">
 X is Y
 X are Y (plural)
@@ -1691,9 +1704,9 @@ It lets you use a verb that isn't "is" or "are"!
 </div>
 </div>
 
-<div id="outline-container-orgd08d506" class="outline-4">
-<h4 id="orgd08d506">Listings</h4>
-<div class="outline-text-4" id="text-orgd08d506">
+<div id="outline-container-org5a194cf" class="outline-4">
+<h4 id="org5a194cf">Listings</h4>
+<div class="outline-text-4" id="text-org5a194cf">
 <ul class="org-ul">
 <li><code>literal X</code> gives the first few factoids for X</li>
 <li><code>literal[#] X</code> pages through the next factoids for X</li>
@@ -1703,9 +1716,9 @@ It lets you use a verb that isn't "is" or "are"!
 </div>
 </div>
 
-<div id="outline-container-org2c81f9d" class="outline-4">
-<h4 id="org2c81f9d">Select</h4>
-<div class="outline-text-4" id="text-org2c81f9d">
+<div id="outline-container-org985283c" class="outline-4">
+<h4 id="org985283c">Select</h4>
+<div class="outline-text-4" id="text-org985283c">
 <p>
 Pick a factoid at random from the factoids of <code>X</code> that includes
 <code>phrase</code>:
@@ -1717,9 +1730,9 @@ X =~ /phrase/
 </div>
 </div>
 
-<div id="outline-container-org6306451" class="outline-4">
-<h4 id="org6306451">Edit</h4>
-<div class="outline-text-4" id="text-org6306451">
+<div id="outline-container-org2c9effe" class="outline-4">
+<h4 id="org2c9effe">Edit</h4>
+<div class="outline-text-4" id="text-org2c9effe">
 <p>
 Bucket will replace the first instance of <code>a</code>
 it finds with <code>b</code> in the factoid called <code>X</code>:
@@ -1736,9 +1749,9 @@ was done by the same user who calls undo)
 </div>
 </div>
 
-<div id="outline-container-orgcf7ae71" class="outline-4">
-<h4 id="orgcf7ae71">Keywords</h4>
-<div class="outline-text-4" id="text-orgcf7ae71">
+<div id="outline-container-orgeae319b" class="outline-4">
+<h4 id="orgeae319b">Keywords</h4>
+<div class="outline-text-4" id="text-orgeae319b">
 <dl class="org-dl">
 <dt><code>$who</code></dt><dd>when a factoid is triggered, all instances of this keyword
 will be substituted for by the nick of whomever triggers the factoid.</dd>
@@ -1751,9 +1764,9 @@ that item.</dd>
 </div>
 </div>
 
-<div id="outline-container-org6327186" class="outline-4">
-<h4 id="org6327186">Commands</h4>
-<div class="outline-text-4" id="text-org6327186">
+<div id="outline-container-orgc8e8e1a" class="outline-4">
+<h4 id="orgc8e8e1a">Commands</h4>
+<div class="outline-text-4" id="text-orgc8e8e1a">
 <dl class="org-dl">
 <dt><code>shut up</code></dt><dd>stop talking in channel for one minute.</dd>
 <dt><code>stats</code></dt><dd>Give some numbers on what Bucket knows and has
@@ -1784,13 +1797,13 @@ Bucket believes to be in the word, as used to find haiku.</dd>
 </div>
 </div>
 
-<div id="outline-container-org6ec3820" class="outline-4">
-<h4 id="ops-only-commands"><a id="org6ec3820"></a>Ops only commands</h4>
+<div id="outline-container-org5a88a11" class="outline-4">
+<h4 id="ops-only-commands">Ops only commands</h4>
 <div class="outline-text-4" id="text-ops-only-commands">
 </div>
 
-<div id="outline-container-org6f3ebc3" class="outline-5">
-<h5 id="factoids"><a id="org6f3ebc3"></a>Factoids</h5>
+<div id="outline-container-org25522e0" class="outline-5">
+<h5 id="factoids">Factoids</h5>
 <div class="outline-text-5" id="text-factoids">
 <dl class="org-dl">
 <dt><code>alias X =&gt; Y</code></dt><dd>make requests for <code>X</code> return <code>Y</code>. Can be chained,
@@ -1817,8 +1830,8 @@ Should be found in the plugins directory, with the name <code>plugin.foo.pl</cod
 </div>
 </div>
 
-<div id="outline-container-org35b8025" class="outline-5">
-<h5 id="variables"><a id="org35b8025"></a>Variables</h5>
+<div id="outline-container-org861be88" class="outline-5">
+<h5 id="variables">Variables</h5>
 <div class="outline-text-5" id="text-variables">
 <dl class="org-dl">
 <dt><code>create var {variable}</code></dt><dd>creates a new variable with that
@@ -1832,8 +1845,8 @@ add values to and remove values from it.</dd>
 </div>
 </div>
 
-<div id="outline-container-org324b24f" class="outline-5">
-<h5 id="items"><a id="org324b24f"></a>Items</h5>
+<div id="outline-container-org1ef1205" class="outline-5">
+<h5 id="items">Items</h5>
 <div class="outline-text-5" id="text-items">
 <dl class="org-dl">
 <dt><code>delete item #n</code></dt><dd>delete item number <code>n</code> from Bucket's carried
@@ -1846,8 +1859,8 @@ used.</dd>
 </div>
 </div>
 
-<div id="outline-container-org5d5469c" class="outline-5">
-<h5 id="settings"><a id="org5d5469c"></a>Settings</h5>
+<div id="outline-container-orgf62a907" class="outline-5">
+<h5 id="settings">Settings</h5>
 <div class="outline-text-5" id="text-settings">
 <dl class="org-dl">
 <dt><code>set X Y</code></dt><dd>Set variable <code>X</code> to <code>Y</code>. If <code>Y</code> isn't specified, will
@@ -1857,8 +1870,8 @@ list all valid configuration variable names.</dd>
 </div>
 </div>
 
-<div id="outline-container-org98a3072" class="outline-5">
-<h5 id="users"><a id="org98a3072"></a>Users</h5>
+<div id="outline-container-orgc46a318" class="outline-5">
+<h5 id="users">Users</h5>
 <div class="outline-text-5" id="text-users">
 <dl class="org-dl">
 <dt><code>ignore X</code></dt><dd>Ignore anything <code>X</code> says.</dd>
@@ -1875,8 +1888,8 @@ used on <code>&lt;nick&gt;</code>.</dd>
 </div>
 </div>
 
-<div id="outline-container-orge2defc6" class="outline-5">
-<h5 id="miscellaneous-commands"><a id="orge2defc6"></a>Miscellaneous commands</h5>
+<div id="outline-container-orgb856900" class="outline-5">
+<h5 id="miscellaneous-commands">Miscellaneous commands</h5>
 <div class="outline-text-5" id="text-miscellaneous-commands">
 <dl class="org-dl">
 <dt><code>shut up</code> or <code>go away</code></dt><dd>stop talking in channel. Bucket will still
@@ -1905,7 +1918,7 @@ of syllables in the word.</dd>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: XKCD Bucket Wiki</p>
-<p class="date">Created: 2021-12-29 Wed 10:44</p>
+<p class="date">Created: 2021-12-29 Wed 11:41</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

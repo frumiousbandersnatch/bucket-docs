@@ -1,3 +1,4 @@
-Online at https://frumiousbandersnatch.github.io/bucket-docs/
+Online at https://frumiousbandersnatch.github.io/bucket-docs/ and perhaps also at http://sobrieti.bot.nu/pail (pail is on snoonet).
 
-Source [[file:index.org]]
+To regenerate ~index.html~, simply edit [[file:index.org]] Emacs and type ~C-c C-e h h~.
+

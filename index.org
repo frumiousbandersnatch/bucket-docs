@@ -11,7 +11,7 @@
 #+HTML_HEAD: <script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
 
 
-*(Rescued from [[https://web.archive.org/web/20170228183648/http://wiki.xkcd.com/wirc/index.php?title=Bucket&action=edit][archive.org]] and converted to [[file:bucket.org][Emacs org mode]] and then to HTML)*
+*(Rescued from [[https://web.archive.org/web/20170228183648/http://wiki.xkcd.com/wirc/index.php?title=Bucket&action=edit][archive.org]] and [[https://github.com/frumiousbandersnatch/bucket-docs][converted]] to Emacs org mode and then to [[https://frumiousbandersnatch.github.io/bucket-docs/][HTML]])*
 
 Bucket has an outer shell of metal; within the metal is a protective
 layer of high density plastic, in which may or may not reside pure HOH.
