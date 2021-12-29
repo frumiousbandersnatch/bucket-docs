@@ -391,8 +391,7 @@ body part.
    :CUSTOM_ID: inventory
    :END:
 
-Bucket uses the new RFC inventory system. A general ideas-ish page is at
-[[file:Bucket_inventory]].
+Bucket uses the new RFC inventory system. 
 
 *** Listing Bucket's inventory
     :PROPERTIES:
@@ -472,7 +471,7 @@ item to his current inventory.
    :CUSTOM_ID: gender
    :END:
 
-Bucket now has support for genders with the RFC [[file:Bucket_Gender]].
+Bucket now has support for genders. 
 More specifically, you will be able to tell Bucket by which pronoun you
 would like to be referred to.
 
@@ -1044,3 +1043,6 @@ was done by the same user who calls undo)
 - ={word} has {number} syllables= :: Advise Bucket of the number
   of syllables in the word.
 
+* Portrait of the bot
+
+[[file:Bucket-Tan.png]]

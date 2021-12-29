@@ -1,0 +1,70 @@
+==RFC: Bucket inventory==
+
+Footnotes refer to features/concerns which may involve extra work, involve solving nontrivial problems, or introduce unintended behavior, and are thus optional at the discretion of the magical code fairy.  They contain no essential information for the base implementation.
+
+Bucket has an inventory list, a list of strings.  He adds new items if they're found in any of the following patterns:
+<pre>
+* Randall puts (.+) in Bucket([^a-zA-Z].*)?
+* Randall gives Bucket (.+)
+* Randall gives (.+) to Bucket([^a-zA-Z].*)?
+<Randall> Bucket[:,] take this (.+)
+<Randall> Bucket[:,] have a (.+)
+</pre>
+
+For this list, unwanted triggerings should be [http://peeron.chiliahedron.com/bycount.txt quite small] ([http://aram.xkcd.com/bucketitems.txt here's] a list of all lines fitting this pattern in #xkcd)
+
+None of these should trigger if followed by a question mark.  Otherwise, anything following "Bucket" in the ones that end with "Bucket" is allowed, except for ' to ', which -- whether it appears in $item or elsewhere in the string -- causes him to ignore the line completely and not change his inventory<sup>1</sup>.
+
+Any specific instance of these strings can be superseded by adding a factoid with that name.
+
+When someone says one of the above<sup>1.5</sup>, Bucket will count the number of items he's carrying.  If it's >=inventory_limit, drop an item by picking one at random, removing it from his list, and saying "/me drops $item and takes $newitem"  If it's <inventory_limit, he adds it and says "/me (now contains|is now carrying|is now holding|takes) $newitem". (Minor note: ideally, "takes" is only chosen when the triggering string contains "gives").
+
+inventory_limit is a mod-changeable setting like random_wait.
+
+If $item matches /^(his|her) .+$/, then s/\1/$name/ where $name is the nick of the person talking to him <-- this could be annoying (see original infobot) but I think it's ultimately very much a positive<sup>2.</sup>
+
+Duplicate items are not allowed. If someone tries to give Bucket an object he already contains, he says "(No thanks, $who, I've already got one.|I already have $item.|But I've already got $item!|$who: I already have $item.)," and his inventory remains unchanged.
+
+$item is a factoidable flag, like $someone and $who, and a random item from his inventory will be substituted.  
+
+$giveitem is a factoidable flag, and when it's triggered, the item in his inventory is removed.
+
+If Bucket is empty, he does not respond to nonaddressed factoids containing $item or $giveitem, and responds to addressed factoids  with either "bananas" as the item or with "I'm empty!".  I don't know which would be funnier in practice; either is acceptable for first implementation.
+
+<pre>
+<Randall> Bucket: I want a present <action> gives $who $giveitem.
+<Bucket> Okay, Randall.
+<Randall> I want a present!
+<Randall> Bucket: I want a present!
+<Bucket> I'm empty!
+* Randall puts a hammer in Bucket
+* Bucket now contains a hammer.
+* Randall gives Bucket the Sistine Chapel.
+* Bucket is now carrying the Sistine Chapel.
+* Randall gives Bucket chlamydia.
+* Bucket takes chlamydia.
+<Randall> Bucket: inventory?
+* Bucket contains a hammer, chlamydia, and the Sistene Chapel.
+<Randall> Bucket: I want a present!
+* Bucket gives Randall chlamydia.
+<Randall> Bucket: inventory?
+* Bucket contains a hammer and the Sistine chapel.
+</pre>
+
+"inventory" becomes a special factoid which lists the items he's carrying as shown above. (Grammar is straightforward, oxford comma encouraged -- "$item." "$item and $item." "$item, $item, and $item.")<sup>3</sup>.
+
+There might be a few other specialized factoids, including "empty yourself", as people suggest them, but they can be added later.
+
+== Optional notes ==
+
+<sup>1.</sup> "Bucket: take this hammer and shove it up your ass." is probably unfixable, since it would break "Bucket: Take this ham and cheese sandwich."  Optional: add special cases for stripping "Bucket: take this (.+) and shove it.*$" at the end, as well as "Bucket: take this (.+) to $recognized_nick", which could get a special reply (<action> gives $recognized_nick $item, and "* Randall gives Bucket to relsqui".  If $recognized_nicks isn't implemented, then just stop trying to take that item -- "Bucket: take this child to the barber shop" could be parsed interestingly, and I don't think too many factoids will contain ' to '.  Possibly "take this pretzel that's too hot to handle?"  But if you don't want this, '''default should be to give up parsing if the string contains ' to '.'''  This is tricky territory and consequences are hard to see.  The fog of time has yet to lift.  All things are possible.  Reply hazy, ask again later.
+
+<sup>1.5.</sup>''(Optional: the list of patterns could be modifiable in a billygoat-style way, or more likely just be a place in the source code where they can be added easily -- it shouldn't need to happen that frequently)''
+
+<sup>2.</sup> Optionally, $item =~ s/^(his|her) (.+) back$/\1/
+
+<sup>3.</sup> Duplicate items are not treated specially or listed specially in inventory unless you really want to tackle the plurals problem (and the secondary optional problem of noticing when items are already plurals).  I (Randall) might be interested in doing this at some point.)
+
+<sup>4. Break even!</sup>
+
+[[Category:Bots]]
